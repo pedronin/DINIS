@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.90032b9b.css",
+    "main.js": "/static/js/main.eac490d0.js",
+    "Cart.css": "/static/css/Cart.fed70ed8.chunk.css",
+    "Cart.js": "/static/js/Cart.ea7b03d1.chunk.js",
+    "Wishlist.css": "/static/css/Wishlist.fed70ed8.chunk.css",
+    "Wishlist.js": "/static/js/Wishlist.0aed1f97.chunk.js",
+    "ProductCart.js": "/static/js/ProductCart.96dc7ad3.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/js/384.331b4440.chunk.js": "/static/js/384.331b4440.chunk.js",
+    "static/media/wishlist-empty.png": "/static/media/wishlist-empty.4a7b24ba2dd70d4e824a.png",
+    "static/media/empty-cart.png": "/static/media/empty-cart.3a7b4f1e0537fb120a20.png",
+    "static/media/cart-13.jpg": "/static/media/cart-13.d9eaa4697af23c856d39.jpg",
+    "static/media/cart-9.jpg": "/static/media/cart-9.49f32ce08dc98548a5f8.jpg",
+    "static/media/cart-8.jpg": "/static/media/cart-8.c5a657eea09f58cc346b.jpg",
+    "static/media/cart-7.jpg": "/static/media/cart-7.4042827ed472a4b1401c.jpg",
+    "static/media/cart-3.jpg": "/static/media/cart-3.aa57ae4b0e6b80e5e147.jpg",
+    "static/media/cart-6.jpg": "/static/media/cart-6.d8f25b59ba88187bcb13.jpg",
+    "static/media/cart-2.jpg": "/static/media/cart-2.1c28fc929ece2e311510.jpg",
+    "static/media/wishlist.svg": "/static/media/wishlist.ca99346f847997f718c06953fae498b4.svg",
+    "static/media/basket.svg": "/static/media/basket.156741d53d3db5b06128d28fba053fb2.svg",
+    "static/media/cart.svg": "/static/media/cart.d41ee06fd87bb0a3fd51ea9a371cbbe3.svg",
+    "index.html": "/index.html",
+    "static/media/search-icon.svg": "/static/media/search-icon.68958562d2a0f93137b242734cf303a5.svg",
+    "static/media/arrow.svg": "/static/media/arrow.eb00f20c6f28071bb134cb188bae13a7.svg",
+    "static/media/clear-input.svg": "/static/media/clear-input.c1c33c0a8883c98118a3844e27a3a5bc.svg",
+    "main.90032b9b.css.map": "/static/css/main.90032b9b.css.map",
+    "main.eac490d0.js.map": "/static/js/main.eac490d0.js.map",
+    "Cart.fed70ed8.chunk.css.map": "/static/css/Cart.fed70ed8.chunk.css.map",
+    "Cart.ea7b03d1.chunk.js.map": "/static/js/Cart.ea7b03d1.chunk.js.map",
+    "Wishlist.fed70ed8.chunk.css.map": "/static/css/Wishlist.fed70ed8.chunk.css.map",
+    "Wishlist.0aed1f97.chunk.js.map": "/static/js/Wishlist.0aed1f97.chunk.js.map",
+    "ProductCart.96dc7ad3.chunk.js.map": "/static/js/ProductCart.96dc7ad3.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map",
+    "384.331b4440.chunk.js.map": "/static/js/384.331b4440.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90032b9b.css",
+    "static/js/main.eac490d0.js"
+  ]
+}
