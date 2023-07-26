@@ -9,13 +9,13 @@ export type TypeProductItem = {
   descr: string;
 };
 
-export interface ProductsSliceState {
-  items: TypeProductItem[];
-  status: Status;
-}
+// export interface ProductsSliceState {
+//   items: TypeProductItem[];
+//   status: Status;
+// }
 
-export enum Status {
-  LOADING = 'loading',
-  SUCCESS = 'success',
-  ERROR = 'error',
-}
+// export enum Status {
+//   LOADING = 'loading',
+//   SUCCESS = 'success',
+//   ERROR = 'error',
+// }
