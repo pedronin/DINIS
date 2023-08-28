@@ -1,0 +1,118 @@
+$background: #f6f6f6;
+$orange: #fc8507;
+$gradient: linear-gradient(0deg, #fc8507, #ffa218);
+
+.header {
+  background: #fff;
+  z-index: 10;
+  padding: 20px 0;
+  box-sizing: content-box;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 2px #0000001a;
+
+  @media (max-width: 520px) {
+    padding: 10px 0;
+    .header {
+      &__logo {
+        background: url(../../assets/img/arrow.svg) center no-repeat;
+        width: 15px;
+        height: 15px;
+        padding: 0;
+        border-radius: 0;
+
+        img {
+          display: none;
+        }
+
+        h2 {
+          display: none;
+        }
+      }
+
+      &__cart {
+        column-gap: 10px;
+      }
+    }
+  }
+
+  &__logo {
+    background: $gradient;
+    padding: 14px 20px;
+    border-radius: 10px;
+
+    h2 {
+      color: #fff;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+
+    &_wish {
+      margin-top: 4px;
+      margin-bottom: -4px;
+    }
+
+    &_link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        position: relative;
+        font-size: 13px;
+      }
+
+      &:hover span {
+        color: #afafaf;
+      }
+    }
+
+    @media (max-width: 925px) {
+      &_descr {
+        display: none;
+      }
+    }
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    &_count {
+      position: absolute;
+      top: -2px;
+      left: 19px;
+
+      width: 18px;
+      padding: 1px 0;
+
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+
+      background: $gradient;
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px #fff;
+
+      &_wishlist {
+        top: -4px;
+        left: 22px;
+      }
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+}

@@ -1,6 +1,6 @@
-import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { CartSliceState } from "./types";
-import { TypeProductItem } from "../products/types";
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
+import { CartSliceState } from './types';
+import { TypeProductItem } from '../products/types';
 
 const initialState: CartSliceState = {
   cartItems: JSON.parse(localStorage.getItem('cartItems') || '[]'),
@@ -22,6 +22,7 @@ const cartSlice = createSlice({
     removeItem(state, action: PayloadAction<TypeProductItem>) {
       state.cartItems = state.cartItems.filter((obj) => obj.id !== action.payload.id);
     },
+    // удаление выбранных товаров из списка
     clearItems(state) {
       state.cartItems = state.cartItems.filter((obj) => {
         if (state.deleteList.includes(obj.id)) {

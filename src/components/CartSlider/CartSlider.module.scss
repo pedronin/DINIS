@@ -1,0 +1,132 @@
+$orange: #fc8507;
+$gradient: linear-gradient(0deg, #fc8507, #ffa218);
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-right: 25px;
+
+  @media (max-width: 425px) {
+    margin: 0;
+  }
+
+  &__nav {
+    padding: 0 30px;
+    overflow-y: scroll;
+    display: flex;
+
+    @media (max-width: 425px) {
+      display: none;
+    }
+
+    &_link {
+      width: 45px;
+      height: 405px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+
+      @media (max-width: 1000px) {
+        height: 350px;
+      }
+
+      @media (max-width: 768px) {
+        height: 300px;
+        row-gap: 5px;
+      }
+    }
+
+    &_prev,
+    &_next {
+      position: absolute;
+      left: 36px;
+      padding: 9px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: none;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+      transform: rotate(90deg);
+
+      @media (max-width: 425px) {
+        bottom: auto;
+        top: 50%;
+        left: 0;
+      }
+
+      img {
+        width: 9px;
+        height: 9px;
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+
+    &_prev {
+      top: 0;
+
+      @media (max-width: 425px) {
+        top: 50%;
+        left: 0;
+        transform: rotate(0);
+      }
+    }
+
+    &_next {
+      transform: rotate(-90deg);
+      bottom: 0;
+
+      @media (max-width: 425px) {
+        bottom: auto;
+        left: auto;
+        top: 50%;
+        right: 0;
+        transform: rotate(180deg);
+      }
+    }
+
+    &_img {
+      position: relative;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      div.active:before {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -15px;
+        height: 100%;
+        width: 3px;
+        background-color: $orange;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &_active {
+    padding-top: 20px;
+    max-width: 470px;
+    max-height: 470px;
+
+    img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

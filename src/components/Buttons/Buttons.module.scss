@@ -1,0 +1,85 @@
+$orange: #fc8507;
+$gradient: linear-gradient(0deg, #fc8507, #ffa218);
+
+.button {
+  &__wishlist,
+  &__cart {
+    max-width: 44.6px;
+    max-height: 44.6px;
+    padding: 8.5px 10.5px 6.5px 8.5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+
+    svg {
+      fill: #afafaf;
+    }
+
+    &.active {
+      svg {
+        fill: $orange;
+      }
+      border: 1.5px solid $orange;
+    }
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+  }
+
+  &__wishlist {
+    padding: 0;
+    padding: 13px 9px 0 12px;
+    margin-right: 6px;
+  }
+
+  &__cart_custom {
+    padding: 20px;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 39px;
+    border: none;
+    background: $gradient;
+    border-radius: 8px;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+
+    &_link {
+      flex-basis: 200px;
+    }
+
+    &.active {
+      background: #fff;
+      border: 1px solid $orange;
+      color: $orange;
+      flex-basis: 200px;
+
+      &:hover {
+        background: $gradient;
+        color: #fff;
+      }
+    }
+  }
+
+  &__back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid $orange;
+    color: $orange;
+    font-weight: 600;
+    font-size: 16px;
+
+    border-radius: 30px;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fc8507;
+      color: #fff;
+    }
+  }
+}

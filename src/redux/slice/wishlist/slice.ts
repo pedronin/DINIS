@@ -24,6 +24,7 @@ const initialState: WishlistSlice = {
         console.log(action.payload.id);
         state.wishItems = state.wishItems.filter((obj) => obj.id !== action.payload.id);
       },
+      // удаление выбранных товаров из списка
       clearItems(state) {
         state.wishItems = state.wishItems.filter((obj) => {
           if (state.deleteList.includes(obj.id)) {

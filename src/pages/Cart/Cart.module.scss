@@ -1,0 +1,156 @@
+$black: #232323;
+$background: #f6f6f6;
+$gray-line: #f6f6f6;
+$orange: #fc8507;
+$gradient: linear-gradient(0deg, #fc8507, #ffa218);
+
+$container-width: 90%;
+
+$duration: 0.15s;
+
+.cart {
+  display: flex;
+
+  @media (max-width: 1020px) {
+    flex-direction: column;
+
+    .cart__content {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .cart__menu {
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    position: sticky;
+    top: 50px;
+    width: 350px;
+    height: 352px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+
+    line {
+      height: 1px;
+      color: #ef1111;
+      background-color: #ef1111;
+      border: none;
+    }
+
+    &_top {
+      padding: 24px 16px 16px;
+    }
+
+    &_amount {
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      h4 {
+        font-size: 18px;
+        span {
+          display: block;
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    &_submit {
+      margin: 0 16px;
+      padding: 22px;
+      display: inline;
+      background: $gradient;
+      border: none;
+      color: #fff;
+      width: 318px;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    &_remains {
+      margin: 16px;
+      padding: 10px;
+      background-color: $background;
+      border-radius: 8px;
+      font-size: 15px;
+
+      span {
+        display: block;
+        color: rgb(0, 122, 255, 0.7);
+      }
+    }
+
+    &_bottom {
+      padding: 16px;
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    margin-right: 2%;
+    width: 70%;
+  }
+
+  &__management {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+
+    &_input {
+      display: flex;
+      align-items: center;
+      input {
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__clear {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      margin-left: 7px;
+      color: #b6b6b6;
+      font-size: 18px;
+    }
+
+    span,
+    svg,
+    path {
+      transition: all $duration ease-in-out;
+    }
+
+    &:hover {
+      svg {
+        path {
+          stroke: darken($color: #b6b6b6, $amount: 50);
+        }
+      }
+      span {
+        color: darken($color: #b6b6b6, $amount: 50);
+      }
+    }
+  }
+}

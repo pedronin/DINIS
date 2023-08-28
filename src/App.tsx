@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import { Routes, Route } from 'react-router-dom';
 
 import MainLayout from './components/Layouts/MainLayout';
@@ -13,7 +13,7 @@ import Loader from './components/Loader';
 
 const Cart = React.lazy(() => import(/* webpackChunkName: "Cart" */ './pages/Cart'));
 const Wishlist = React.lazy(() => import(/* webpackChunkName: "Wishlist" */ './pages/Wishlist'));
-const ProductCart = React.lazy(() => import(/* webpackChunkName: "ProductCart" */ './pages/ProductCart'));
+const ProductCart = React.lazy(() => import(/* webpackChunkName: "ProductCart" */ './pages/FullProduct/FullProduct'));
 
 function App() {
   return (
