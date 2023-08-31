@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/DINIS/static/css/main.10fd3630.css",
-    "main.js": "/DINIS/static/js/main.2b1477ba.js",
+    "main.css": "/DINIS/static/css/main.4d624a60.css",
+    "main.js": "/DINIS/static/js/main.c88a1f62.js",
     "Cart.css": "/DINIS/static/css/Cart.88cd48b7.chunk.css",
     "Cart.js": "/DINIS/static/js/Cart.76d1c394.chunk.js",
     "Wishlist.css": "/DINIS/static/css/Wishlist.54c8830a.chunk.css",
     "Wishlist.js": "/DINIS/static/js/Wishlist.ac24fb54.chunk.js",
     "ProductCart.css": "/DINIS/static/css/ProductCart.90313e07.chunk.css",
     "ProductCart.js": "/DINIS/static/js/ProductCart.e05deb42.chunk.js",
-    "static/js/787.28cb0dcd.chunk.js": "/DINIS/static/js/787.28cb0dcd.chunk.js",
     "static/media/wishlist-empty.png": "/DINIS/static/media/wishlist-empty.4a7b24ba2dd70d4e824a.png",
     "static/media/empty-cart.png": "/DINIS/static/media/empty-cart.3a7b4f1e0537fb120a20.png",
     "static/media/cart-13.jpg": "/DINIS/static/media/cart-13.d9eaa4697af23c856d39.jpg",
@@ -25,18 +24,17 @@
     "static/media/search-icon.svg": "/DINIS/static/media/search-icon.68958562d2a0f93137b242734cf303a5.svg",
     "static/media/arrow.svg": "/DINIS/static/media/arrow.eb00f20c6f28071bb134cb188bae13a7.svg",
     "static/media/clear-input.svg": "/DINIS/static/media/clear-input.c1c33c0a8883c98118a3844e27a3a5bc.svg",
-    "main.10fd3630.css.map": "/DINIS/static/css/main.10fd3630.css.map",
-    "main.2b1477ba.js.map": "/DINIS/static/js/main.2b1477ba.js.map",
+    "main.4d624a60.css.map": "/DINIS/static/css/main.4d624a60.css.map",
+    "main.c88a1f62.js.map": "/DINIS/static/js/main.c88a1f62.js.map",
     "Cart.88cd48b7.chunk.css.map": "/DINIS/static/css/Cart.88cd48b7.chunk.css.map",
     "Cart.76d1c394.chunk.js.map": "/DINIS/static/js/Cart.76d1c394.chunk.js.map",
     "Wishlist.54c8830a.chunk.css.map": "/DINIS/static/css/Wishlist.54c8830a.chunk.css.map",
     "Wishlist.ac24fb54.chunk.js.map": "/DINIS/static/js/Wishlist.ac24fb54.chunk.js.map",
     "ProductCart.90313e07.chunk.css.map": "/DINIS/static/css/ProductCart.90313e07.chunk.css.map",
-    "ProductCart.e05deb42.chunk.js.map": "/DINIS/static/js/ProductCart.e05deb42.chunk.js.map",
-    "787.28cb0dcd.chunk.js.map": "/DINIS/static/js/787.28cb0dcd.chunk.js.map"
+    "ProductCart.e05deb42.chunk.js.map": "/DINIS/static/js/ProductCart.e05deb42.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10fd3630.css",
-    "static/js/main.2b1477ba.js"
+    "static/css/main.4d624a60.css",
+    "static/js/main.c88a1f62.js"
   ]
 }
