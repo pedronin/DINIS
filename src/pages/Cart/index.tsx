@@ -1,19 +1,17 @@
 import React from 'react';
 
 import styles from './Cart.module.scss';
-
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
+import { priceSplit } from '../../utils/priceSplit';
+import { calcTotalPrice } from '../../utils/calcTotalPrice';
+import basket from '../../assets/img/basket.svg';
 
+import { TypeProductItem } from '../../redux/slice/products/types';
 import { clearItems, setMarkDeleteAll } from '../../redux/slice/cart/slice';
 import { selectCartItems, selectDeleteList } from '../../redux/slice/cart/selectors';
 
-import basket from '../../assets/img/basket.svg';
-import { priceSplit } from '../../utils/priceSplit';
-import { calcTotalPrice } from '../../utils/calcTotalPrice';
-
 import CartItem from '../../components/CartAndWishItem/CartItem';
 import CartEmpty from '../../components/EmptyPage/CartEmpty';
-import { TypeProductItem } from '../../redux/slice/products/types';
 import ButtonToHome from '../../components/Buttons/ButtonToHome';
 
 const Cart: React.FC = () => {

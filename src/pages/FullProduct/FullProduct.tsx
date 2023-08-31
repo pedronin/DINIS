@@ -1,15 +1,15 @@
 import React from 'react';
-
-import styles from './FullProduct.module.scss';
-
 import { useParams } from 'react-router-dom';
 
-import CartSlider from '../../components/CartSlider';
-import ButtonAddCart from '../../components/Buttons/ButtonAddCart';
-import Loader from '../../components/Loader';
-import { productsApi } from '../../redux/slice/products/asyncActions';
-import ButtonAddWish from '../../components/Buttons/ButtonAddWish';
+import styles from './FullProduct.module.scss';
 import { priceSplit } from '../../utils/priceSplit';
+
+import { productsApi } from '../../redux/slice/products/asyncActions';
+
+import CartSlider from '../../components/CartSlider';
+import Loader from '../../components/Loader';
+import ButtonAddCart from '../../components/Buttons/ButtonAddCart';
+import ButtonAddWish from '../../components/Buttons/ButtonAddWish';
 
 export const ProductCart: React.FC = () => {
   const { id } = useParams();

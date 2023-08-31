@@ -1,14 +1,14 @@
 import React from 'react';
-import { setSearchValue } from '../../redux/slice/filter/slice';
 import { useDispatch } from 'react-redux';
-
-import styles from './SearchInput.module.scss';
-
-import searchIconImg from '../../assets/img/search-icon.svg';
-import clearInputImg from '../../assets/img/clear-input.svg';
 import { useNavigate } from 'react-router-dom';
 
-const Search: React.FC = () => {
+import styles from './SearchInput.module.scss';
+import searchIconImg from '../../assets/img/search-icon.svg';
+import clearInputImg from '../../assets/img/clear-input.svg';
+
+import { setSearchValue } from '../../redux/slice/filter/slice';
+
+const SearchInput: React.FC = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -69,4 +69,4 @@ const Search: React.FC = () => {
   );
 };
 
-export default Search;
+export default SearchInput;

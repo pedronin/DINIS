@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './ProductBlock.module.scss';
-
 import { priceSplit } from '../../utils/priceSplit';
 
-import Rating from '../Rating';
+import { TypeProductItem } from '../../redux/slice/products/types';
+
 import ButtonAddWish from '../Buttons/ButtonAddWish';
 import ButtonAddCart from '../Buttons/ButtonAddCart';
-import { TypeProductItem } from '../../redux/slice/products/types';
+import RatingStars from '../RatingStars';
 
 const ProductItem: React.FC<{ item: TypeProductItem }> = ({ item }) => {
   const { id, imageUrl, title, price, rating } = item;
@@ -27,7 +27,7 @@ const ProductItem: React.FC<{ item: TypeProductItem }> = ({ item }) => {
         </div>
       </div>
       <div className={styles.product_block__rating}>
-        <Rating ratingNum={rating} />
+        <RatingStars ratingNum={rating} />
       </div>
     </div>
   );

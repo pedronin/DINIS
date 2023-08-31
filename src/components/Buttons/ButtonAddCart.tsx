@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Buttons.module.scss';
-
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
 
 import { TypeProductItem } from '../../redux/slice/products/types';

@@ -1,8 +1,7 @@
 import React from 'react';
 
-import { useAppDispatch, useAppSelector } from '../../Hook/redux';
-
 import styles from './Buttons.module.scss';
+import { useAppDispatch, useAppSelector } from '../../Hook/redux';
 
 import { TypeProductItem } from '../../redux/slice/products/types';
 import { selectWishItems } from '../../redux/slice/wishlist/selectors';

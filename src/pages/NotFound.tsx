@@ -5,7 +5,7 @@ const NotFound: React.FC = () => {
   return (
     <div className="container">
       <h1>
-        <span>💩</span>
+        <span>🙄</span>
         <br />
         Ничего не найдено
       </h1>

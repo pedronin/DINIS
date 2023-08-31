@@ -2,18 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
+import { useAppSelector } from '../../Hook/redux';
+import wishlist from '../../assets/img/wishlist.svg';
+import cart from '../../assets/img/cart.svg';
+import { calcTotalPrice } from '../../utils/calcTotalPrice';
+import { priceSplit } from '../../utils/priceSplit';
 
 import { selectCartItems } from '../../redux/slice/cart/selectors';
 import { selectWishItems } from '../../redux/slice/wishlist/selectors';
 
-import wishlist from '../../assets/img/wishlist.svg';
-import cart from '../../assets/img/cart.svg';
-
-import { calcTotalPrice } from '../../utils/calcTotalPrice';
-import { priceSplit } from '../../utils/priceSplit';
-
-import Search from '../SearchInput';
-import { useAppSelector } from '../../Hook/redux';
+import SearchInput from '../SearchInput';
 
 const Header: React.FC = () => {
   const wishItems = useAppSelector(selectWishItems);
@@ -27,7 +25,7 @@ const Header: React.FC = () => {
             <h2>DINIS</h2>
           </div>
         </Link>
-        <Search />
+        <SearchInput />
         <div className={styles.header__cart}>
           <Link to="/wishlist">
             <div className={styles.header__cart_link}>

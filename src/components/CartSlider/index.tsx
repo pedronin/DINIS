@@ -17,8 +17,8 @@ import cartImg11 from '../../assets/img/cart_img/cart-11.jpg';
 import cartImg12 from '../../assets/img/cart_img/cart-12.jpg';
 import cartImg13 from '../../assets/img/cart_img/cart-13.jpg';
 import cartImg14 from '../../assets/img/cart_img/cart-14.jpg';
-
 import arrow from '../../assets/img/arrow.svg';
+
 
 interface ICartSlider {
   imageUrl: string;

@@ -1,19 +1,17 @@
 import React from 'react';
 
 import styles from './Wishlist.module.scss';
-
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
+import { priceSplit } from '../../utils/priceSplit';
+import { calcTotalPrice } from '../../utils/calcTotalPrice';
+import basket from '../../assets/img/basket.svg';
 
 import { clearItems, setMarkDeleteAll } from '../../redux/slice/wishlist/slice';
 import { selectDeleteList, selectWishItems } from '../../redux/slice/wishlist/selectors';
-
-import basket from '../../assets/img/basket.svg';
-import { priceSplit } from '../../utils/priceSplit';
-import { calcTotalPrice } from '../../utils/calcTotalPrice';
+import { TypeProductItem } from '../../redux/slice/products/types';
 
 import WishlistItem from '../../components/CartAndWishItem/WishlistItem';
 import WishlistEmpty from '../../components/EmptyPage/WishlistEmpty';
-import { TypeProductItem } from '../../redux/slice/products/types';
 import ButtonToHome from '../../components/Buttons/ButtonToHome';
 
 const Wishlist: React.FC = () => {

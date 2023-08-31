@@ -1,9 +1,9 @@
 import React from 'react';
-import { useAppDispatch, useAppSelector } from '../../Hook/redux';
 import { useNavigate } from 'react-router-dom';
 import qs from 'qs';
 
 import styles from './Home.module.scss';
+import { useAppDispatch, useAppSelector } from '../../Hook/redux';
 
 import { productsApi } from '../../redux/slice/products/asyncActions';
 import { setFilters } from '../../redux/slice/filter/slice';
@@ -65,11 +65,11 @@ const Home: React.FC = () => {
 
   return (
     <div className="container">
-      <div className={styles.content__top}>
-        <Categories />
+      <h2 className={styles.content__title}>Ноутбуки {data.length} товаров</h2>
+      <div className={styles.content__sort}>
+        {/* <Categories /> */}
         <Sort />
       </div>
-      <h2 className={styles.content__title}>Ноутбуки {data.length} товаров</h2>
       <div className={styles.content__items}>
         {data.map((obj) => (
           <ProductItem item={obj} key={obj.id} />

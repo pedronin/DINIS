@@ -1,8 +1,8 @@
 import React from 'react';
 
 import styles from './Sort.module.scss';
-
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
+
 import { setSortId, setAsc } from '../../redux/slice/filter/slice';
 import { selectFilter } from '../../redux/slice/filter/selectors';
 

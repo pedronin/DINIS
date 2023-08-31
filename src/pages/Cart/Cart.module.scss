@@ -16,11 +16,12 @@ $duration: 0.15s;
 
     .cart__content {
       width: 100%;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
 
     .cart__menu {
       width: 100%;
+      margin-bottom: 30px;
     }
   }
 
@@ -67,7 +68,8 @@ $duration: 0.15s;
       background: $gradient;
       border: none;
       color: #fff;
-      width: 318px;
+      max-width: 312px;
+      width: 90%;
       border-radius: 8px;
       font-size: 17px;
       font-weight: 600;

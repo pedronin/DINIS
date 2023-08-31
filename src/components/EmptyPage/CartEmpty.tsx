@@ -1,8 +1,9 @@
 import React from 'react';
-import cartEmptyImg from '../../assets/img/empty-cart.png';
-import ButtonToHome from '../Buttons/ButtonToHome';
 
 import styles from './EmptyPage.module.scss'
+import cartEmptyImg from '../../assets/img/empty-cart.png';
+
+import ButtonToHome from '../Buttons/ButtonToHome';
 
 const CartEmpty: React.FC = () => {
   return (

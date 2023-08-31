@@ -22,7 +22,7 @@ const cartSlice = createSlice({
     removeItem(state, action: PayloadAction<TypeProductItem>) {
       state.cartItems = state.cartItems.filter((obj) => obj.id !== action.payload.id);
     },
-    // удаление выбранных товаров из списка
+    // выбор и удаление выбранных товаров из списка
     clearItems(state) {
       state.cartItems = state.cartItems.filter((obj) => {
         if (state.deleteList.includes(obj.id)) {

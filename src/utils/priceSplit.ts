@@ -1,4 +1,3 @@
-
 // раздробить число по три цифры с конца
 export const priceSplit = (price: number) => {
   return price

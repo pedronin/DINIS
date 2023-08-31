@@ -1,14 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from './Item.module.scss';
-
+import { priceSplit } from '../../utils/priceSplit';
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
 
 import { setDeleteList } from '../../redux/slice/cart/slice';
-import { Link } from 'react-router-dom';
-import PopupCopyCode from '../PopupCopyCode';
-import { priceSplit } from '../../utils/priceSplit';
 import { selectDeleteList } from '../../redux/slice/cart/selectors';
+
+import PopupCopyCode from '../PopupCopyCode';
 
 type ICartItem = {
   id: string;
