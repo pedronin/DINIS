@@ -17,7 +17,6 @@ const Sort: React.FC = () => {
     <div className={styles.sort}>
       <div className={styles.sort__label}>
         <div
-          // className={styles.asc ? 'sort__button' : 'sort__button sort__button-desc'}
           className={`${asc ? '' : styles.sort__button_desc} ${styles.sort__button}`}
           onClick={() => dispatch(setAsc())}>
           <svg

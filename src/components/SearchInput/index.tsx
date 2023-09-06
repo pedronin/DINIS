@@ -30,7 +30,6 @@ const SearchInput: React.FC = () => {
     if (window.location.pathname !== '/') {
       navigate('/');
     }
-    // setInputValue('')
   };
 
   const onChangeClearInput = () => {

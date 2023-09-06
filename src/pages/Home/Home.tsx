@@ -9,7 +9,6 @@ import { productsApi } from '../../redux/slice/products/asyncActions';
 import { setFilters } from '../../redux/slice/filter/slice';
 import { selectFilter } from '../../redux/slice/filter/selectors';
 
-import Categories from '../../components/Categories';
 import Sort from '../../components/Sort';
 import ProductItem from '../../components/ProductBlock';
 import Loader from '../../components/Loader';
@@ -32,7 +31,6 @@ const Home: React.FC = () => {
 
   React.useEffect(() => {
     const sortList = ['rating', 'price', 'title'];
-    // const search = `?sortBy=${p[sortId]}&order=${asc === true ? 'asc' : 'desc'}&category=${categoryId}&title=${searchValue}`;
     const d = `?sortBy=${sortList[sortId]}&order=${
       asc === true ? 'asc' : 'desc'
     }&title=${searchValue}`;

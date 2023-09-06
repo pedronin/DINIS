@@ -8,9 +8,6 @@ export const productsApi = createApi({
     fetchAllProducts: build.query<TypeProductItem[], string>({
       query: (arg) => ({
         url: `/items${arg}`,
-        // params: {
-        //   params: arg
-        // }
       })
     }),
     getOneProduct: build.query<TypeProductItem, string>({

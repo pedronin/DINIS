@@ -25,9 +25,6 @@ $gradient: linear-gradient(0deg, #fc8507, #ffa218);
         padding-right: 30px;
         display: block;
         font-size: 25px;
-        // flex-basis: 250px;
-        // max-width: 250px;
-        // width: 100%;
         background: linear-gradient(270deg, #f6f6f6, hsla(0, 0%, 100%, 0));
         border-radius: 8px;
       }
@@ -35,7 +32,6 @@ $gradient: linear-gradient(0deg, #fc8507, #ffa218);
       &_buttons {
         margin-bottom: 10px;
         display: flex;
-        // align-items: center;
       }
     }
 
@@ -55,13 +51,3 @@ $gradient: linear-gradient(0deg, #fc8507, #ffa218);
     }
   }
 }
-
-// @media (max-width: 425px) {
-//   .product__cart {
-//     .content {
-//       &__buy {
-//         flex-direction: column;
-//       }
-//     }
-//   }
-// }
