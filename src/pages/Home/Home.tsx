@@ -1,14 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import qs from 'qs';
-
 import styles from './Home.module.scss';
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
-
-import { productsApi } from '../../redux/slice/products/asyncActions';
-import { setFilters } from '../../redux/slice/filter/slice';
-import { selectFilter } from '../../redux/slice/filter/selectors';
-
+import { productsApi } from '../../redux/slice/products';
+import { setFilters, selectFilter } from '../../redux/slice/filter';
 import Sort from '../../components/Sort';
 import ProductItem from '../../components/ProductBlock';
 import Loader from '../../components/Loader';

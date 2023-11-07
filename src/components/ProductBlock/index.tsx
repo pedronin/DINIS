@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './ProductBlock.module.scss';
-import { priceSplit } from '../../utils/priceSplit';
-
-import { TypeProductItem } from '../../redux/slice/products/types';
-
+import { priceSplit } from '../../utils';
+import { TypeProductItem } from '../../redux/slice/products';
 import ButtonAddWish from '../Buttons/ButtonAddWish';
 import ButtonAddCart from '../Buttons/ButtonAddCart';
 import RatingStars from '../RatingStars';
 
-const ProductItem: React.FC<{ item: TypeProductItem }> = ({ item }) => {
+interface IProductItemProps { 
+  item: TypeProductItem 
+}
+
+const ProductItem: React.FC<IProductItemProps> = ({ item }) => {
   const { id, imageUrl, title, price, rating } = item;
 
   return (

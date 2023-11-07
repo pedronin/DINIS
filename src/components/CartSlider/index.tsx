@@ -1,8 +1,7 @@
 import React from 'react';
-
 import styles from './CartSlider.module.scss';
 
-// сделал статичными т.к. делать такой огромный API слишком долго и не имеет смысла
+// сделал статичными т.к. делать такой огромный API
 // в реале эти данные само собой будут подтягиваться с бэка
 import cartImg2 from '../../assets/img/cart_img/cart-2.jpg';
 import cartImg3 from '../../assets/img/cart_img/cart-3.jpg';
@@ -20,11 +19,11 @@ import cartImg14 from '../../assets/img/cart_img/cart-14.jpg';
 import arrow from '../../assets/img/arrow.svg';
 
 
-interface ICartSlider {
+interface ICartSliderProps {
   imageUrl: string;
 }
 
-const CartSlider: React.FC<ICartSlider> = ({ imageUrl }) => {
+const CartSlider: React.FC<ICartSliderProps> = ({ imageUrl }) => {
   const image = [
     imageUrl,
     cartImg2,

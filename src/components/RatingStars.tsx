@@ -1,11 +1,11 @@
 import React from 'react';
 import StarRatings from 'react-star-ratings';
 
-interface IRatingStars {
+interface IRatingStarsProps {
   ratingNum: number
 }
 
-const RatingStars: React.FC<IRatingStars> = ({ ratingNum }) => {
+const RatingStars: React.FC<IRatingStarsProps> = ({ ratingNum }) => {
   return (
     <StarRatings
       rating={Number(ratingNum)}

@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import filter from './slice/filter/slice';
 import cart from './slice/cart/slice';
 import wishlist from './slice/wishlist/slice';
-import { productsApi } from './slice/products/asyncActions';
+import { productsApi } from './slice/products';
 
 export const store = configureStore({
   reducer: {

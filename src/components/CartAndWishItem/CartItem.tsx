@@ -1,25 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './Item.module.scss';
-import { priceSplit } from '../../utils/priceSplit';
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
-
-import { setDeleteList } from '../../redux/slice/cart/slice';
-import { selectDeleteList } from '../../redux/slice/cart/selectors';
-
+import { priceSplit } from '../../utils';
+import { setDeleteList, selectDeleteList, TypeCartItem } from '../../redux/slice/cart';
 import PopupCopyCode from '../PopupCopyCode';
 
-type ICartItem = {
-  id: string;
-  code: number;
-  imageUrl: string;
-  title: string;
-  price: number;
-  descr: string;
-};
-
-const CartItem: React.FC<ICartItem> = ({ id, code, imageUrl, title, price, descr }) => {
+const CartItem: React.FC<TypeCartItem> = ({ id, code, imageUrl, title, price, descr }) => {
   const dispatch = useAppDispatch();
   const deleteList = useAppSelector(selectDeleteList);
 

@@ -1,11 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
 import styles from './FullProduct.module.scss';
-import { priceSplit } from '../../utils/priceSplit';
-
-import { productsApi } from '../../redux/slice/products/asyncActions';
-
+import { priceSplit } from '../../utils';
+import { productsApi } from '../../redux/slice/products';
 import CartSlider from '../../components/CartSlider';
 import Loader from '../../components/Loader';
 import ButtonAddCart from '../../components/Buttons/ButtonAddCart';
@@ -13,7 +10,6 @@ import ButtonAddWish from '../../components/Buttons/ButtonAddWish';
 
 export const ProductCart: React.FC = () => {
   const { id } = useParams();
-
   const { data: product } = productsApi.useGetOneProductQuery(id || '');
 
   if (!product || !id) {

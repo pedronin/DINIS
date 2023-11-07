@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './Item.module.scss';
 import { priceSplit } from '../../utils/priceSplit';
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
-
-import { setDeleteList } from '../../redux/slice/wishlist/slice';
-import { selectDeleteList } from '../../redux/slice/wishlist/selectors';
-import { TypeProductItem } from '../../redux/slice/products/types';
-
+import { setDeleteList, selectDeleteList } from '../../redux/slice/wishlist';
+import { TypeProductItem } from '../../redux/slice/products';
 import ButtonAddCart from '../Buttons/ButtonAddCart';
 import PopupCopyCode from '../PopupCopyCode';
 
-const WishlistItem: React.FC<{ item: TypeProductItem }> = ({ item }) => {
+interface WishlistItemProps { 
+  item: TypeProductItem 
+}
+
+const WishlistItem: React.FC<WishlistItemProps> = ({ item }) => {
   const { id, code, imageUrl, title, price, descr } = item;
   const dispatch = useAppDispatch();
   const deleteList = useAppSelector(selectDeleteList);

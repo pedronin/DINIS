@@ -1,12 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-
 import styles from './SearchInput.module.scss';
 import searchIconImg from '../../assets/img/search-icon.svg';
 import clearInputImg from '../../assets/img/clear-input.svg';
-
-import { setSearchValue } from '../../redux/slice/filter/slice';
+import { setSearchValue } from '../../redux/slice/filter';
 
 const SearchInput: React.FC = () => {
   const dispatch = useDispatch();

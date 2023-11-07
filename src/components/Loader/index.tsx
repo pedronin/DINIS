@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Loader.module.scss'
+import styles from './Loader.module.scss';
 
-interface ILoader {
+interface ILoaderProps {
   bgW?: boolean
 } 
 
-const Loader: React.FC<ILoader> = ({ bgW }) => {
+const Loader: React.FC<ILoaderProps> = ({ bgW }) => {
   if (bgW) {
     return (
       <div className={`${styles.loader__container} ${styles.loader__container_white}`}>

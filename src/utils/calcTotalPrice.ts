@@ -1,4 +1,4 @@
-import { TypeProductItem } from '../redux/slice/products/types';
+import { TypeProductItem } from '../redux/slice/products';
 
 // общая сумма
 export const calcTotalPrice = (items: TypeProductItem[]) => {

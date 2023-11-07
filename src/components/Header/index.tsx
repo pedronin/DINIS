@@ -1,17 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './Header.module.scss';
 import { useAppSelector } from '../../Hook/redux';
+import { calcTotalPrice, priceSplit } from '../../utils';
+import { selectCartItems } from '../../redux/slice/cart';
+import { selectWishItems } from '../../redux/slice/wishlist';
+import SearchInput from '../SearchInput';
 import wishlist from '../../assets/img/wishlist.svg';
 import cart from '../../assets/img/cart.svg';
-import { calcTotalPrice } from '../../utils/calcTotalPrice';
-import { priceSplit } from '../../utils/priceSplit';
-
-import { selectCartItems } from '../../redux/slice/cart/selectors';
-import { selectWishItems } from '../../redux/slice/wishlist/selectors';
-
-import SearchInput from '../SearchInput';
 
 const Header: React.FC = () => {
   const wishItems = useAppSelector(selectWishItems);

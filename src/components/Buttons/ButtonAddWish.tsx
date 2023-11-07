@@ -1,11 +1,8 @@
 import React from 'react';
-
 import styles from './Buttons.module.scss';
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
-
-import { TypeProductItem } from '../../redux/slice/products/types';
-import { selectWishItems } from '../../redux/slice/wishlist/selectors';
-import { addItemWishlist } from '../../redux/slice/wishlist/slice';
+import { TypeProductItem } from '../../redux/slice/products';
+import { selectWishItems, addItemWishlist } from '../../redux/slice/wishlist';
 
 const wishlistItemIncluded = (wishItems: TypeProductItem[], id: string): Boolean => {
   for (let i = 0; i < wishItems.length; i++) {
@@ -14,11 +11,11 @@ const wishlistItemIncluded = (wishItems: TypeProductItem[], id: string): Boolean
   return false;
 };
 
-interface IButtonAdd {
+interface IButtonProps {
   item: TypeProductItem;
 }
 
-const ButtonAddWish: React.FC<IButtonAdd> = ({ item }) => {
+const ButtonAddWish: React.FC<IButtonProps> = ({ item }) => {
   const dispatch = useAppDispatch();
   const wishItems = useAppSelector(selectWishItems);
 

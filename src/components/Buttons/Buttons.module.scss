@@ -78,7 +78,7 @@ $gradient: linear-gradient(0deg, #fc8507, #ffa218);
     cursor: pointer;
 
     &:hover {
-      background-color: #fc8507;
+      background-color: $orange;
       color: #fff;
     }
   }

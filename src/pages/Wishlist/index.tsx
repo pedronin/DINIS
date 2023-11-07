@@ -1,18 +1,18 @@
-import React from 'react';
-
-import styles from './Wishlist.module.scss';
-import { useAppDispatch, useAppSelector } from '../../Hook/redux';
-import { priceSplit } from '../../utils/priceSplit';
-import { calcTotalPrice } from '../../utils/calcTotalPrice';
-import basket from '../../assets/img/basket.svg';
-
-import { clearItems, setMarkDeleteAll } from '../../redux/slice/wishlist/slice';
-import { selectDeleteList, selectWishItems } from '../../redux/slice/wishlist/selectors';
-import { TypeProductItem } from '../../redux/slice/products/types';
-
-import WishlistItem from '../../components/CartAndWishItem/WishlistItem';
-import WishlistEmpty from '../../components/EmptyPage/WishlistEmpty';
-import ButtonToHome from '../../components/Buttons/ButtonToHome';
+import React from "react";
+import styles from "./Wishlist.module.scss";
+import { useAppDispatch, useAppSelector } from "../../Hook/redux";
+import { priceSplit, calcTotalPrice } from "../../utils";
+import {
+  clearItems,
+  setMarkDeleteAll,
+  selectDeleteList,
+  selectWishItems,
+} from "../../redux/slice/wishlist";
+import { TypeProductItem } from "../../redux/slice/products";
+import WishlistItem from "../../components/CartAndWishItem/WishlistItem";
+import WishlistEmpty from "../../components/EmptyPage/WishlistEmpty";
+import ButtonToHome from "../../components/Buttons/ButtonToHome";
+import basket from "../../assets/img/basket.svg";
 
 const Wishlist: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -22,7 +22,7 @@ const Wishlist: React.FC = () => {
 
   React.useEffect(() => {
     if (isMounted.current) {
-      localStorage.setItem('wishItems', JSON.stringify(wishItems));
+      localStorage.setItem("wishItems", JSON.stringify(wishItems));
     }
     isMounted.current = true;
   }, [wishItems]);
@@ -38,9 +38,13 @@ const Wishlist: React.FC = () => {
         <div className={styles.wishlist__management}>
           <div className={styles.wishlist__management_info}>
             <b>
-              {wishItems.length}{' '}
-              {wishItems.length > 4 ? 'товаров' : wishItems.length === 1 ? 'товар' : 'товара'} на
-              сумму: {priceSplit(calcTotalPrice(wishItems))} ₽
+              {wishItems.length}{" "}
+              {wishItems.length > 4
+                ? "товаров"
+                : wishItems.length === 1
+                ? "товар"
+                : "товара"}{" "}
+              на сумму: {priceSplit(calcTotalPrice(wishItems))} ₽
             </b>
           </div>
           <div className={styles.wishlist__management_main}>
@@ -53,7 +57,10 @@ const Wishlist: React.FC = () => {
               />
               <label htmlFor="all">Выбрать всё</label>
             </div>
-            <div onClick={() => dispatch(clearItems())} className={styles.wishlist__clear}>
+            <div
+              onClick={() => dispatch(clearItems())}
+              className={styles.wishlist__clear}
+            >
               <span></span>
               <img src={basket} alt="" />
             </div>

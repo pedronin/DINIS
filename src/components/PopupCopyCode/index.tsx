@@ -1,12 +1,11 @@
 import React from 'react';
-
 import styles from './PopupCopyCode.module.scss';
 
-interface IPopupCopyCode {
+interface IPopupCopyCodeProps {
   code: string;
 }
 
-const PopupCopyCode: React.FC<IPopupCopyCode> = ({ code }) => {
+const PopupCopyCode: React.FC<IPopupCopyCodeProps> = ({ code }) => {
   const [hidden, setHidden] = React.useState(true);
 
   const copyCode = () => {

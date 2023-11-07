@@ -1,9 +1,7 @@
 import React from 'react';
-
 import styles from './EmptyPage.module.scss';
-import wishlistEmptyImg from '../../assets/img/wishlist-empty.png';
-
 import ButtonToHome from '../Buttons/ButtonToHome';
+import wishlistEmptyImg from '../../assets/img/wishlist-empty.png';
 
 const WishlistEmpty: React.FC = () => {
   return (

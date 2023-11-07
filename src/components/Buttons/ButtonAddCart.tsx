@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import styles from './Buttons.module.scss';
 import { useAppDispatch, useAppSelector } from '../../Hook/redux';
-
-import { TypeProductItem } from '../../redux/slice/products/types';
-import { addItemCart } from '../../redux/slice/cart/slice';
-import { selectCartItems } from '../../redux/slice/cart/selectors';
+import { TypeProductItem } from '../../redux/slice/products';
+import { addItemCart, selectCartItems } from '../../redux/slice/cart';
 
 const cartItemIncluded = (cartItems: TypeProductItem[], id: string): Boolean => {
   for (let i = 0; i < cartItems.length; i++) {
@@ -15,12 +12,12 @@ const cartItemIncluded = (cartItems: TypeProductItem[], id: string): Boolean => 
   return false;
 };
 
-interface IButtonAdd {
+interface IButtonProps {
   flag?: Boolean;
   item: TypeProductItem;
 }
 
-const ButtonAddCart: React.FC<IButtonAdd> = ({ flag, item }) => {
+const ButtonAddCart: React.FC<IButtonProps> = ({ flag, item }) => {
   const dispatch = useAppDispatch();
   const cartItems = useAppSelector(selectCartItems);
 

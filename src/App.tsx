@@ -1,16 +1,10 @@
 import React, { Suspense } from 'react';
-import Home from './pages/Home/Home';
 import { Routes, Route } from 'react-router-dom';
 
 import MainLayout from './components/Layouts/MainLayout';
 import NotFound from './pages/NotFound';
 import Loader from './components/Loader';
-
-
-// import Cart from './pages/Cart';
-// import Wishlist from './pages/Wishlist';
-// import { ProductCart } from './pages/ProductCart';
-
+import Home from './pages/Home/Home';
 const Cart = React.lazy(() => import(/* webpackChunkName: "Cart" */ './pages/Cart'));
 const Wishlist = React.lazy(() => import(/* webpackChunkName: "Wishlist" */ './pages/Wishlist'));
 const ProductCart = React.lazy(() => import(/* webpackChunkName: "ProductCart" */ './pages/FullProduct/FullProduct'));
