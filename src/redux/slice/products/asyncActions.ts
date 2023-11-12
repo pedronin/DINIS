@@ -1,9 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { TypeProductItem } from './types';
 
+import { SERVER_URL } from '../../../env'
+
 export const productsApi = createApi({
   reducerPath: 'productsApi',
-  baseQuery: fetchBaseQuery({baseUrl: 'https://64b7989221b9aa6eb0789204.mockapi.io'}),
+  baseQuery: fetchBaseQuery({baseUrl: SERVER_URL}),
   endpoints: (build) => ({
     fetchAllProducts: build.query<TypeProductItem[], string>({
       query: (arg) => ({
