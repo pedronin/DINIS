@@ -1,2 +1,2 @@
 # DINIS
-https://pedronin.github.io/blog-react.js/
+https://pedronin.github.io/DINIS/
